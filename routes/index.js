@@ -14,7 +14,7 @@ exports.movie_single = function(req, res) {
   var episode_number = req.params.episode_number;
   var movies = moviesJSON.movies;
 
-  if (episode_number >= 1 && episode_number <= 6) {
+  if (episode_number >= 1 && episode_number <= 7) {
     var movie = movies[episode_number - 1];
     var title = movie.title;
     var main_characters = movie.main_characters;
