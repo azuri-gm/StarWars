@@ -20,4 +20,5 @@ app.get('/star_wars_episode/:episode_number?', routes.movie_single);
 // Not found
 app.get('*', routes.notFound);
 
+// App listening on port 3000
 app.listen(process.env.PORT || 3000);
